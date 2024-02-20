@@ -1,9 +1,10 @@
 import React from 'react'
+import FormContacto from '@/components/FormContacto'
 
 const contact = () => {
     return (
-        <div>
-            <h1>contact</h1>
+        <div className='h-screen flex justify-center items-center px-32'>
+        <FormContacto />
         </div>
     )
 }

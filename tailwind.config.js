@@ -17,5 +17,18 @@ module.exports = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            secondary: {
+              DEFAULT: "#f5741c",
+
+            },
+          },
+        },
+      },
+    }),
+  ],
 };

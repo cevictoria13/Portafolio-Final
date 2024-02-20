@@ -1,5 +1,13 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, } from "@nextui-org/react";
+import {
+  Navbar, 
+  NavbarBrand, 
+  NavbarContent, 
+  NavbarItem, 
+  Link, 
+  NavbarMenuToggle,
+  NavbarMenu
+} from "@nextui-org/react";
 //import {AcmeLogo} from "./AcmeLogo.js";
 
 const Appbar = () => {
@@ -20,15 +28,47 @@ const Appbar = () => {
   ];
 
   return (
-    <Navbar>
-      <NavbarBrand>
-        {/*<AcmeLogo />*/}
-        <p className="font-bold text-inherit">CSV</p>
-      </NavbarBrand>
+    <Navbar className="bg-background/40" >
+
+      {/*navbar responsive XS */}
+      <NavbarContent className="sm:hidden" justify="start">
+        <NavbarMenuToggle />
+      </NavbarContent>
+
+      <NavbarContent className="sm:hidden pr-3" justify="center" >
+        <NavbarBrand>
+          {/*<AcmeLogo />*/}
+
+          <Link href="/">
+            <p className="font-bold text-white">Portafolio</p>
+          </Link>
+          <p className="font-bold text-secondary">CSV</p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarMenu>
+        {links.map((link) => (
+          <NavbarItem >
+            <Link className="text-white" href="{link.href}">
+              {link.nombre}
+            </Link>
+          </NavbarItem>
+        ))}
+      </NavbarMenu>
+
+      {/*navbar responsive XL */}
+      <NavbarContent className="hidden sm:flex gap-4" justify="start" >
+        <NavbarBrand>
+          <Link href="/">
+            <p className="font-bold text-secondary">Portafolio</p>
+          </Link>
+        </NavbarBrand>
+      </NavbarContent>
+
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {links.map((link, i) => (
-          <NavbarItem>
-            <Link color="foreground" href={link.href}>
+          <NavbarItem key={i}>
+            <Link className="text-white" href={link.href}>
               {link.nombre}
             </Link>
           </NavbarItem>
