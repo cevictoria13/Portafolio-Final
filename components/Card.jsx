@@ -1,9 +1,19 @@
-import { Button } from '@nextui-org/button'
+'use client'
+import { Button } from '@nextui-org/button';
+import { motion } from "framer-motion";
+import { fadeIn } from "./utils/motionTransitions.js";
 import { BsDownload } from "react-icons/bs";
+import React from "react";
 
 const Card = () => {
     return (
-        <div className='flex flex-col px-20 sm:px-5'>
+        <motion.div
+            variants={fadeIn("left", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className='flex flex-col px-20 sm:px-5'>
+
             <div className='mb-5'>
                 <h2 className='text-5xl font-bold text-secondary'>Construimos tus ideas!!</h2>
             </div>
@@ -21,7 +31,7 @@ const Card = () => {
                     endContent={<BsDownload fontSize={22} />}
                 >Curriculum</Button>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

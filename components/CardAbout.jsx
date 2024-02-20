@@ -1,10 +1,19 @@
-import React from 'react'
-import { Image } from "@nextui-org/react"
-import profile from "@/assets/img/profile.png"
+'use client'
+import React from 'react';
+import { Image } from "@nextui-org/react";
+import profile from "@/assets/img/profile.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/components/utils/motionTransitions";
 
 const CardAbout = () => {
     return (
-        <div className='h-screen flex flex-col justify-center items-center'>
+        <motion.div
+        variants={fadeIn("down", 0.5)}
+        initial="hidden"
+        animate="show"
+        exit="hidden" 
+
+        className='h-screen flex flex-col justify-center items-center'>
             <Image           
                 isBlurred
                 className='mb-5'
@@ -22,7 +31,7 @@ const CardAbout = () => {
                 </p>
             </div>
 
-        </div>
+        </motion.div>
     );
 };
 

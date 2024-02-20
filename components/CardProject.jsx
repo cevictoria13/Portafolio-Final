@@ -1,10 +1,21 @@
-import { Button } from '@nextui-org/react'
-import React from 'react'
+'use client'
+import { Button } from '@nextui-org/react';
+import { motion } from "framer-motion";
+import { fadeIn } from "@/components/utils/motionTransitions";
 import Image from "next/image";
+import Link from "next/link";
+import React from 'react';
 
 const CardProject = (props) => {
     return (
-        <div className='flex flex-col justify-center items-center min-h-[200px] relative group cursor-pointer'>
+        <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className='flex flex-col justify-center items-center min-h-[200px] relative group cursor-pointer'>
 
             <div className='text-center bg-gray-500/70 absolute top-0 z-20 p-5 rounded'>
                 <h1 className='font-bold'>{props.title}</h1>
@@ -30,7 +41,7 @@ const CardProject = (props) => {
                     <Button color='secondary'>Deploy</Button>
                 </Link>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
