@@ -1,8 +1,8 @@
 'use client'
 import { Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/components/utils/motionTransitions"
-import Avatar from '@/assets/img/avatar.jpg'
+import { fadeIn } from "@/components/utils/motionTransitions";
+import Avatar from '@/assets/img/avatar.jpg';
 
 const CardImage = () => {
     return (
