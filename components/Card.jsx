@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "./utils/motionTransitions.js";
 import { BsDownload } from "react-icons/bs";
 import React from "react";
+import Link from "next/link";
 
 const Card = () => {
     return (
@@ -25,11 +26,13 @@ const Card = () => {
             </div>
 
             <div className='mt-5'>
-                <Button
-                    color='secondary'
-                    className='py-6 px-5 text-base'
-                    endContent={<BsDownload fontSize={22} />}
-                >Curriculum</Button>
+                <Link href={"/docs/cv.pdf"} target={"_blank"} download={true}>
+                    <Button
+                        color='secondary'
+                        className='py-6 px-5 text-base'
+                        endContent={<BsDownload fontSize={22} />}
+                    >Curriculum</Button>
+                </Link>
             </div>
         </motion.div>
     )
