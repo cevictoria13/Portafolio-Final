@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'nextui.org'
+                hostname: '**'
             }
         ]
     }

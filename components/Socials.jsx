@@ -13,12 +13,12 @@ const Socials = () => {
     const dataSocials = [
         {
             name: "Linkedin",
-            path: "https://www.linkedin.com",
+            path: "https://www.linkedin.com/in/cecilia-s%C3%A1nchez-56820117/",
             icon: <RiLinkedinBoxFill size="30" />,
         },
         {
             name: "Github",
-            path: "https://www.github",
+            path: "https://github.com/cevictoria13",
             icon: <RiGithubFill size="30" />,
         },
 
