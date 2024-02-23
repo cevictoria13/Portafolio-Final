@@ -8,7 +8,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu
 } from "@nextui-org/react";
-//import {AcmeLogo} from "./AcmeLogo.js";
+//import {Logo} from "./AcmeLogo.js";
 
 const Appbar = () => {
 
@@ -49,7 +49,7 @@ const Appbar = () => {
       <NavbarMenu>
         {links.map((link) => (
           <NavbarItem >
-            <Link className="text-white" href="{link.href}">
+            <Link className="text-white" href={link.href}>
               {link.nombre}
             </Link>
           </NavbarItem>

@@ -27,7 +27,7 @@ const CardAbout = () => {
 
             <div>
                 <p className='text-xl px-5 sm:px-20'>
-                    Lorem impsum dolooors
+                    Más de 15 años de experiencia en diseño de productos y servicios como también en gestión de proyectos ambientales, sociales, de fomento, entre otros. Actualmente, incorporamos el servicio de desarrollo web full stack para entregar soluciones funcionales y atractivas a nuestros clientes. Contáctanos para entregarte una solución a tu medida.
                 </p>
             </div>
 

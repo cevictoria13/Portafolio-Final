@@ -1,4 +1,4 @@
-import React from 'react'
+
 import FormContacto from '@/components/FormContacto'
 
 const contact = () => {
