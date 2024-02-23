@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portafolio Desarrollado con Next.js y NextUI
 
-First, run the development server:
+Este es un proyecto de portafolio desarrollado utilizando Next.js y NextUI. El portafolio está desplegado en Vercel para su fácil acceso y visualización en línea.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Características
+
+- **Next.js:** Utilizamos Next.js como framework de React para el desarrollo del proyecto. Proporciona renderizado del lado del servidor, rutas dinámicas y otras características que hacen que el desarrollo sea más rápido y eficiente.
+
+- **NextUI:** NextUI es una biblioteca de componentes UI diseñada para ser utilizada con Next.js. Ofrece una amplia gama de componentes personalizables y estilizados para crear interfaces de usuario atractivas y responsivas.
+
+- **Vercel:** El portafolio está desplegado en Vercel, una plataforma de desarrollo y alojamiento que permite desplegar aplicaciones frontend y backend de forma sencilla y rápida.
+
+## Instalación
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. Clona este repositorio en tu máquina local:
+
+```
+git clone https://github.com/tu-usuario/nombre-del-repositorio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navega al directorio del proyecto:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+cd nombre-del-repositorio
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Instala las dependencias utilizando npm o yarn:
 
-## Learn More
+```
+npm install
+```
+o
+```
+yarn install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Inicia el servidor de desarrollo:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run dev
+```
+o
+```
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Abre tu navegador y navega a `http://localhost:3000` para ver el portafolio en funcionamiento.
 
-## Deploy on Vercel
+## Despliegue en Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este proyecto está configurado para ser desplegado en Vercel. Simplemente haz un push a tu repositorio en GitHub y Vercel se encargará del resto. Asegúrate de configurar las variables de entorno necesarias en la configuración de tu proyecto en Vercel.
+
+## Contribuciones
+
+Siéntete libre de contribuir a este proyecto. Puedes abrir issues para reportar problemas o sugerir nuevas características, o enviar pull requests con tus propias contribuciones.
+
+## Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
+```
+
+Recuerda reemplazar los placeholders como `tu-usuario`, `nombre-del-repositorio`, y `http://localhost:3000` con la información real de tu proyecto. ¡Espero que te sea útil!
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
